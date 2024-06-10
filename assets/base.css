@@ -3455,3 +3455,65 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+
+
+/* ----------page custom-footer-------- */
+.footer-section {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+  margin: 10px;
+}
+
+.footer-column-header {
+  display: none;
+}
+
+.footer-column-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column-list li {
+  margin: 5px 0;
+}
+
+.footer-column-list li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+  .footer-column-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .footer-column-header svg {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
+  }
+
+  .footer-column-list {
+    display: none;
+  }
+
+  .footer-column.active .footer-column-list {
+    display: block;
+  }
+}
+/* ---------- end page custom-footer--------  */
