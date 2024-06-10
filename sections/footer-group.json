@@ -44,11 +44,32 @@
             "item_title_7": "",
             "item_url_7": ""
           }
+        },
+        "column_cKF7if": {
+          "type": "column",
+          "settings": {
+            "title": "INFORMATION",
+            "item_title_1": "Terms & Conditions",
+            "item_url_1": "",
+            "item_title_2": "Privacy Policy",
+            "item_url_2": "",
+            "item_title_3": "Sitemap",
+            "item_url_3": "",
+            "item_title_4": "",
+            "item_url_4": "",
+            "item_title_5": "",
+            "item_url_5": "",
+            "item_title_6": "",
+            "item_url_6": "",
+            "item_title_7": "",
+            "item_url_7": ""
+          }
         }
       },
       "block_order": [
         "column_4Dh7Jw",
-        "column_ChyGxN"
+        "column_ChyGxN",
+        "column_cKF7if"
       ],
       "settings": {
       }
