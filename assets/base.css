@@ -3503,9 +3503,10 @@ details-disclosure > details {
 
   .footer-column-header svg {
     position: absolute;
-    top: 50%;
+    width: 24px;
+    /* top: 50%; */
     right: -30px;
-    /* transform: translateY(-50%); */
+    transform: translateY(-50%);
   }
 
   .footer-column-list {
