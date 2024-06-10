@@ -1283,3 +1283,16 @@ class BulkAdd extends HTMLElement {
 if (!customElements.get('bulk-add')) {
   customElements.define('bulk-add', BulkAdd);
 }
+
+/* ---------- page custom-footer--------  */
+document.addEventListener('DOMContentLoaded', function () {
+  var headers = document.querySelectorAll('.footer-column-header');
+  headers.forEach(function (header) {
+    header.addEventListener('click', function () {
+      var column = this.parentElement;
+      column.classList.toggle('active');
+    });
+  });
+});
+
+/* ---------- end page custom-footer--------  */
