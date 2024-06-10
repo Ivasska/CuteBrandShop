@@ -3504,8 +3504,8 @@ details-disclosure > details {
   .footer-column-header svg {
     position: absolute;
     top: 50%;
-    right: -50px;
-    transform: translateY(-50%);
+    right: -30px;
+    /* transform: translateY(-50%); */
   }
 
   .footer-column-list {

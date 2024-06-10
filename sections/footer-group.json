@@ -2,11 +2,42 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_footer_YCxtqb": {
+      "type": "custom-footer",
+      "blocks": {
+        "column_4Dh7Jw": {
+          "type": "column",
+          "settings": {
+            "title": "LET US HELP YOU",
+            "item_title_1": "Help",
+            "item_url_1": "shopify:\/\/products\/charismatic-platform-heels-black",
+            "item_title_2": "Returns",
+            "item_url_2": "shopify:\/\/products\/fairies-dress-pink",
+            "item_title_3": "Size",
+            "item_url_3": "shopify:\/\/products\/mini-dress-blue",
+            "item_title_4": "Guide",
+            "item_url_4": "shopify:\/\/products\/mini-dresses-with-sleeves-mint",
+            "item_title_5": "",
+            "item_url_5": "",
+            "item_title_6": "",
+            "item_url_6": "",
+            "item_title_7": "",
+            "item_url_7": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_4Dh7Jw"
+      ],
+      "settings": {
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
         "footer-0": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "Quick links",
             "menu": "footer"
@@ -14,6 +45,7 @@
         },
         "footer-1": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "Info",
             "menu": "footer"
@@ -21,6 +53,7 @@
         },
         "footer-2": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "heading": "Our mission",
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
@@ -49,6 +82,7 @@
     }
   },
   "order": [
+    "custom_footer_YCxtqb",
     "footer"
   ]
 }
