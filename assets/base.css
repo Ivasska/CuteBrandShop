@@ -3459,20 +3459,18 @@ details-disclosure > details {
 
 
 /* ----------page custom-footer-------- */
-.footer-section {
-  padding: 20px;
-  background-color: #f8f8f8;
-}
-
-.footer-columns {
+.footer-menu {
   display: flex;
   flex-wrap: wrap;
-}
+
+  padding: 20px;
+  background-color: #f8f8f8;
+  }
 
 .footer-column {
   flex: 1;
   min-width: 150px;
-  margin: 10px;
+  margin: 20px 10px;
 }
 
 .footer-column-header {
@@ -3495,10 +3493,16 @@ details-disclosure > details {
 
 /* Styles for mobile devices */
 @media (max-width: 767px) {
-  .footer-column-header {
+  .footer-menu {
     display: block;
-    cursor: pointer;
+  }
+  .footer-column-header {
     position: relative;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .footer-column-header svg {
@@ -3506,7 +3510,11 @@ details-disclosure > details {
     width: 24px;
     /* top: 50%; */
     right: -30px;
-    transform: translateY(-50%);
+    transition: transform 0.5s ease; /* Додайте анімацію для плавної зміни */
+  }
+
+  .footer-column-header:active svg {
+    transform: rotate(180deg); /* Обертання на 90 градусів при натисканні */
   }
 
   .footer-column-list {
