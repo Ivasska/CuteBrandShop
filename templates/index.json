@@ -220,6 +220,46 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collection_list_iWMGyE": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_cagbrJ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women-dresses"
+          }
+        },
+        "featured_collection_X7ew48": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hair-accessories"
+          }
+        },
+        "featured_collection_9Khk8G": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women-shoes"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_cagbrJ",
+        "featured_collection_X7ew48",
+        "featured_collection_9Khk8G"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -228,6 +268,7 @@
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "collection_list_iWMGyE"
   ]
 }
