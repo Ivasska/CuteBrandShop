@@ -218,12 +218,19 @@
         "featured_collection_AayG4J": {
           "type": "featured_collection",
           "settings": {
+            "collection": "hair-accessories"
+          }
+        },
+        "featured_collection_FGxHpf": {
+          "type": "featured_collection",
+          "settings": {
             "collection": "bags"
           }
         }
       },
       "block_order": [
-        "featured_collection_AayG4J"
+        "featured_collection_AayG4J",
+        "featured_collection_FGxHpf"
       ],
       "settings": {
         "image_ratio": "square",
