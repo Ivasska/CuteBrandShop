@@ -220,14 +220,21 @@
           "settings": {
             "collection": "hair-accessories"
           }
+        },
+        "featured_collection_xU6btx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women-bags"
+          }
         }
       },
       "block_order": [
-        "featured_collection_fbMUhq"
+        "featured_collection_fbMUhq",
+        "featured_collection_xU6btx"
       ],
       "settings": {
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
