@@ -231,10 +231,17 @@
           "settings": {
             "collection": "hair-accessories"
           }
+        },
+        "featured_collection_KXafKR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women-dresses"
+          }
         }
       },
       "block_order": [
-        "featured_collection_6Hp8nG"
+        "featured_collection_6Hp8nG",
+        "featured_collection_KXafKR"
       ],
       "settings": {
         "image_ratio": "square",
