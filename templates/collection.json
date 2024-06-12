@@ -20,17 +20,31 @@
         "featured_collection_zPHEyF": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "women-dresses"
+          }
+        },
+        "featured_collection_TTUgeC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women-skirt"
+          }
+        },
+        "featured_collection_NmyenM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women-bags"
           }
         }
       },
       "block_order": [
         "featured_collection_kCVKBV",
-        "featured_collection_zPHEyF"
+        "featured_collection_zPHEyF",
+        "featured_collection_TTUgeC",
+        "featured_collection_NmyenM"
       ],
       "settings": {
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
