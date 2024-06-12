@@ -242,6 +242,44 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collection_list_custom_U9pNdX": {
+      "type": "collection-list-custom",
+      "blocks": {
+        "featured_collection_XhxxyH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women-bags"
+          }
+        },
+        "featured_collection_pNrRh4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_zq4dii": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_XhxxyH",
+        "featured_collection_pNrRh4",
+        "featured_collection_zq4dii"
+      ],
+      "settings": {
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -251,6 +289,7 @@
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "collection_list_custom_U9pNdX"
   ]
 }
