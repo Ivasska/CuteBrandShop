@@ -243,8 +243,71 @@
         "padding_bottom": 36
       }
     },
-    "collection_list_custom_NDfa7U": {
+    "collection_list_custom_RdjPEn": {
       "type": "collection-list-custom",
+      "blocks": {
+        "featured_collection_zFAkYb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_Fx3TEj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_qP4QE8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_zFAkYb",
+        "featured_collection_Fx3TEj",
+        "featured_collection_qP4QE8"
+      ],
+      "settings": {
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_custom_aPdW8G": {
+      "type": "collection-list-custom",
+      "blocks": {
+        "featured_collection_Brt7RJ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_ETxeNM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_YJjBtw": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Brt7RJ",
+        "featured_collection_ETxeNM",
+        "featured_collection_YJjBtw"
+      ],
       "settings": {
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -265,6 +328,7 @@
     "collage",
     "video",
     "multicolumn",
-    "collection_list_custom_NDfa7U"
+    "collection_list_custom_RdjPEn",
+    "collection_list_custom_aPdW8G"
   ]
 }
