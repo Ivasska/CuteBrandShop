@@ -55,18 +55,11 @@
           "settings": {
             "collection": "women-bags"
           }
-        },
-        "featured_collection_Uj6nQt": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
         }
       },
       "block_order": [
         "featured_collection_LDUWFQ",
-        "featured_collection_3d8eCx",
-        "featured_collection_Uj6nQt"
+        "featured_collection_3d8eCx"
       ],
       "settings": {
         "image_ratio": "square",
