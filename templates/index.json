@@ -81,6 +81,12 @@
         "featured_collection_n6TYr8",
         "featured_collection_9Khk8G"
       ],
+      "custom_css": [
+        ".title-wrapper-with-link {display: block; text-align: center;}",
+        ".collection-list-title {font-size: 12px;}",
+        ".full-unstyled-link {font-size: 10px; text-transform: uppercase; text-align: center;}",
+        ".icon-wrap {display: none;}"
+      ],
       "settings": {
         "title": "Shop by category",
         "heading_size": "h2",
