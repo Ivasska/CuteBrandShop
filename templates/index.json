@@ -67,12 +67,19 @@
           "settings": {
             "collection": "women-shoes"
           }
+        },
+        "featured_collection_n6TYr8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women-jeans"
+          }
         }
       },
       "block_order": [
         "featured_collection_cagbrJ",
         "featured_collection_X7ew48",
-        "featured_collection_9Khk8G"
+        "featured_collection_9Khk8G",
+        "featured_collection_n6TYr8"
       ],
       "settings": {
         "title": "Shop by category",
