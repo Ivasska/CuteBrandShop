@@ -27,6 +27,7 @@
           {% capture content %}
             <div id="tabs-{{ collection.id }}">
               <ul class="grid product-grid grid--2-col-tablet-down  grid--4-col-desktop">
+                <button class="slick-prev slick-arrow arrow-control" aria-label="Previous" type="button" style="">Previous</button>
                {%- for product in block.settings.collection.products limit: 4 -%}
                <li class="grid__item scroll-trigger animate--slide-in">
                   {% render 'card-product',
@@ -41,12 +42,14 @@
                   %}
                </li>
               {%- endfor -%}
+              <button class="slick-next slick-arrow arrow-control" aria-label="Next" type="button" style="">Next</button>
               </ul>
              {%  if block.settings.viewall %}
                <div class="center collection__view-all scroll-trigger animate--slide-in">
                  <a class="button" href="{{ block.settings.collection.url }}"> View all </a>
                </div>
                {%  endif  %}
+
             </div>
         {% endcapture %}
           {% assign tabContent = tabContent | append: content %}
@@ -66,13 +69,21 @@
               $this.slick('unslick');
             }
             $this.slick({
-              dots: false,
+              dots: true,
               arrows: true,
               infinite: false,
               speed: 300,
               slidesToShow: 4,
-              slidesToScroll: 4,
+              slidesToScroll: 1,
               responsive: [
+                {
+                  breakpoint: 1640,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true
+                  }
+                },
                 {
                   breakpoint: 1024,
                   settings: {
@@ -147,6 +158,32 @@
     .tabs .slick-slider {
       margin: 0 -5px;
     }
+    /* ----------------- */
+    .tabs .slick-next,
+    .tabs .slick-prev {
+      position: absolute;
+      display: block;
+      top: 50%;
+    }
+    .tabs .slick-next {
+      right: -10px;
+    }
+    .tabs .slick-prev {
+      left: -10px;
+    }
+    .tabs .slick-next:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+    }
+    .tabs .slick-prev::before {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      z-index: 1;
+    }
+    /* ----------------- */
     .tabs .collection__view-all a {
       color: white !important;
     }
