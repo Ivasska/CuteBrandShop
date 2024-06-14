@@ -100,6 +100,21 @@
         "padding_bottom": 32
       }
     },
+    "video_ymAUWg": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/youtu.be\/YKiYgWOtdRc?si=U9TjOiy_uHi5YYS-",
+        "cover_image": "shopify:\/\/shop_images\/6129_2_Soho-Light-Blue-Asymmetric-Cowl-Neck-Corset-A-Line-Mini-With-Ots-Sleevecopy.webp",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "custom_tab_collection_xJH7TW": {
       "type": "custom-tab-collection",
       "blocks": {
@@ -304,6 +319,7 @@
   "order": [
     "image_banner",
     "collection_list_iWMGyE",
+    "video_ymAUWg",
     "custom_tab_collection_xJH7TW",
     "rich_text",
     "featured_collection",
