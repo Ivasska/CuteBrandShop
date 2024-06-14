@@ -20,8 +20,8 @@
         <li><a href="#tabs-{{ collection.id }}">{{ collection.title  }}</a></li>
         {%  capture content  %}
             <div id="tabs-{{ collection.id }}">
-              <ul class="grid product-grid grid--2-col-tablet-down  grid--3-col-desktop">
-               {%- for product in block.settings.collection.products limit: 3 -%}
+              <ul class="grid product-grid grid--2-col-tablet-down  grid--4-col-desktop">
+               {%- for product in block.settings.collection.products limit: 4 -%}
                <li class="grid__item scroll-trigger animate--slide-in">
                   {% render 'card-product',
                     card_product: product,
