@@ -103,7 +103,7 @@
     "video_ymAUWg": {
       "type": "video",
       "settings": {
-        "heading": "Video",
+        "heading": "",
         "heading_size": "h2",
         "enable_video_looping": false,
         "video_url": "https:\/\/youtu.be\/YKiYgWOtdRc?si=U9TjOiy_uHi5YYS-",
