@@ -114,14 +114,14 @@
           "type": "tab",
           "settings": {
             "collection": "women-jeans",
-            "viewall": false
+            "viewall": true
           }
         },
         "tab_zV8R3c": {
           "type": "tab",
           "settings": {
             "collection": "women-skirt",
-            "viewall": false
+            "viewall": true
           }
         }
       },
