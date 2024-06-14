@@ -120,19 +120,12 @@
           "settings": {
             "collection": "women-skirt"
           }
-        },
-        "tab_4dcghT": {
-          "type": "tab",
-          "settings": {
-            "collection": "women-shoes"
-          }
         }
       },
       "block_order": [
         "tab_pV3M9W",
         "tab_fKKdqr",
-        "tab_zV8R3c",
-        "tab_4dcghT"
+        "tab_zV8R3c"
       ],
       "settings": {
         "title": "Women Fashion"
