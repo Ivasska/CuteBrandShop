@@ -106,19 +106,22 @@
         "tab_pV3M9W": {
           "type": "tab",
           "settings": {
-            "collection": "women-dresses"
+            "collection": "clothing",
+            "viewall": true
           }
         },
         "tab_fKKdqr": {
           "type": "tab",
           "settings": {
-            "collection": "women-jeans"
+            "collection": "women-jeans",
+            "viewall": true
           }
         },
         "tab_zV8R3c": {
           "type": "tab",
           "settings": {
-            "collection": "women-skirt"
+            "collection": "women-skirt",
+            "viewall": true
           }
         }
       },
@@ -128,7 +131,8 @@
         "tab_zV8R3c"
       ],
       "settings": {
-        "title": "Women Fashion"
+        "title": "Women Fashion",
+        "useslider": true
       }
     },
     "rich_text": {
