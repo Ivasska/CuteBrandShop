@@ -132,7 +132,7 @@
       ],
       "settings": {
         "title": "Women Fashion",
-        "useslider": false
+        "useslider": true
       }
     },
     "rich_text": {
