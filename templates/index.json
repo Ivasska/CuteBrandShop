@@ -107,7 +107,7 @@
           "type": "tab",
           "settings": {
             "collection": "clothing",
-            "viewall": false
+            "viewall": true
           }
         },
         "tab_fKKdqr": {
