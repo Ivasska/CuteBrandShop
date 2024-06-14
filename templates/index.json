@@ -107,21 +107,21 @@
           "type": "tab",
           "settings": {
             "collection": "clothing",
-            "viewall": true
+            "viewall": false
           }
         },
         "tab_fKKdqr": {
           "type": "tab",
           "settings": {
             "collection": "women-jeans",
-            "viewall": true
+            "viewall": false
           }
         },
         "tab_zV8R3c": {
           "type": "tab",
           "settings": {
             "collection": "women-skirt",
-            "viewall": true
+            "viewall": false
           }
         }
       },
