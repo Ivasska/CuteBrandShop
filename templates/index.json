@@ -118,6 +118,9 @@
     },
     "featured_products_slider_fMGxDr": {
       "type": "featured-products-slider",
+      "custom_css": [
+        ".featured-slider-section {padding: 20px 30px;}"
+      ],
       "settings": {
         "title": "Featured Product",
         "products": [
