@@ -116,6 +116,22 @@
         "padding_bottom": 36
       }
     },
+    "featured_products_slider_fMGxDr": {
+      "type": "featured-products-slider",
+      "settings": {
+        "title": "Featured Product",
+        "products": [
+          "asymmetric-lace-up-a-line-mini-dress-in-sky-blue",
+          "corset-mini-dress-in-light-blue",
+          "bandeau-neckline-mini-dress-in-white",
+          "ribbed-modal-lace-trim-mini-dress-in-bluebell",
+          "mini-dresses-with-sleeves-mint",
+          "triangle-cup-spaghetti-strap-mini-dress-in-white",
+          "denim-wrap-skort-in-medium-wash",
+          "denim-midi-skirt-with-front-split-in-mid-blue"
+        ]
+      }
+    },
     "custom_tab_collection_xJH7TW": {
       "type": "custom-tab-collection",
       "blocks": {
@@ -321,6 +337,7 @@
     "image_banner",
     "collection_list_iWMGyE",
     "video_ymAUWg",
+    "featured_products_slider_fMGxDr",
     "custom_tab_collection_xJH7TW",
     "rich_text",
     "featured_collection",
