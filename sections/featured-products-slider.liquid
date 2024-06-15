@@ -1,0 +1,140 @@
+<div class="page-width featured-slider-section">
+  <div class="featured-section-title">
+    {% if section.settings.title != blank %}
+      <h3 class="featured-slider-section-title">{{ section.settings.title }}</h3>
+    {% endif %}
+  </div>
+
+  <div class="featured-products-slider">
+    <div class="products-grid">
+      {% for product in section.settings.products limit: 8 %}
+        <div class="product-item">
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+            <p>{{ product.title }}</p>
+            <p>{{ product.price | money }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 600px) {
+    .products-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .product-item {
+    padding: 10px;
+  }
+  /* ----------slider----------- */
+  .slick-slider .slick-arrow,
+  .arrow-control {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    line-height: 50px;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .slick-slider .slick-arrow:before,
+  .arrow-control:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .slick-slider .slick-prev,
+  .control-prev {
+    left: -10px;
+  }
+  .slick-slider .slick-prev::before,
+  .control-prev::before {
+    content: '<';
+    color: black;
+  }
+  .slick-slider .slick-next,
+  .control-next {
+    right: -10px;
+  }
+  .slick-slider .slick-next::before,
+  .control-next::before {
+    content: '>';
+    color: black;
+  }
+  /* ----------end slider----------- */
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.products-grid');
+    // Initialize slider
+    $('.products-grid').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      speed: 300,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            arrows: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Featured Products Slider",
+  "tag": "section",
+  "class": "section featured-slider-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "product_list",
+      "id": "products",
+      "label": "Select products"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Products Slider"
+    }
+  ]
+}
+{% endschema %}
