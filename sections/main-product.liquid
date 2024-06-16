@@ -36,6 +36,16 @@
     }
   {%- endstyle -%}
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      console.log('Popup loaded');
+      const popupRichText = document.querySelector('.popup-richtext');
+      if (popupRichText) {
+        console.log('Richtext content:', popupRichText.innerHTML);
+      }
+    });
+  </script>
+
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   {%- if product.quantity_price_breaks_configured? -%}
@@ -699,6 +709,12 @@
             {% endif %}
 
             {{ block.settings.table_html }}
+
+            {% if block.settings.table_richtext != blank %}
+              <div class="popup-richtext">
+                {{ block.settings.table_richtext | escape }}
+              </div>
+            {% endif %}
             {% comment %} --------end new code----- {% endcomment %}
           </div>
         </div>
@@ -744,10 +760,6 @@
 {%- if section.settings.table_html -%}
   {{ section.settings.table_html }}
 {%- endif -%}
-
-{% if block.settings.table_richtext != blank %}
-  {{ block.settings.table_richtext }}
-{% endif %}
 {% comment %} ---------end new code------- {% endcomment %}
 
 {% schema %}
