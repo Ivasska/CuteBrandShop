@@ -34,6 +34,16 @@
             "swatch_shape": "circle"
           }
         },
+        "popup_Qz8VNi": {
+          "type": "popup",
+          "settings": {
+            "text": "Pop-up link text",
+            "page": "",
+            "hide_empty_popup": false,
+            "hide_popup_title": false,
+            "popup_content": ""
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -100,6 +110,7 @@
         "caption",
         "price",
         "variant_picker",
+        "popup_Qz8VNi",
         "quantity_selector",
         "buy_buttons",
         "description",
