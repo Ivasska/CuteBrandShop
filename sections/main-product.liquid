@@ -438,20 +438,30 @@
                   {%- endif -%}
                 </div>
               {%- when 'popup' -%}
-                <modal-opener
-                  class="product-popup-modal__opener quick-add-hidden"
-                  data-modal="#PopupModal-{{ block.id }}"
-                  {{ block.shopify_attributes }}
-                >
-                  <button
-                    id="ProductPopup-{{ block.id }}"
-                    class="product-popup-modal__button link"
-                    type="button"
-                    aria-haspopup="dialog"
+                {% comment %} ----------new code------ {% endcomment %}
+                {%- assign popup_content_exists = false -%}
+                {%- if block.settings.page.content != blank -%}
+                  {%- assign popup_content_exists = true -%}
+                {% endif %}
+                {% if popup_content_exists or block.settings.hide_empty_popup == false %}
+                  {% comment %} -----------end new code---------- {% endcomment %}
+
+                  <modal-opener
+                    class="product-popup-modal__opener quick-add-hidden"
+                    data-modal="#PopupModal-{{ block.id }}"
+                    {{ block.shopify_attributes }}
                   >
-                    {{ block.settings.text | default: block.settings.page.title | escape }}
-                  </button>
-                </modal-opener>
+                    <button
+                      id="ProductPopup-{{ block.id }}"
+                      class="product-popup-modal__button link"
+                      type="button"
+                      aria-haspopup="dialog"
+                    >
+                      {{ block.settings.text | default: block.settings.page.title | escape }}
+                    </button>
+                  </modal-opener>
+                {% endif %}
+
               {%- when 'share' -%}
                 {% liquid
                   assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin
@@ -684,8 +694,11 @@
             {% render 'icon-close' %}
           </button>
           <div class="product-popup-modal__content-info">
-            <h1 class="h2">{{ block.settings.page.title | escape }}</h1>
-            {{ block.settings.page.content }}
+            {% if block.settings.hide_popup_title != true %}
+              <h1 class="h2">{{ block.settings.page.title | escape }}</h1>
+            {% endif %}
+
+            {{ block.settings.popup_content | raw }}
           </div>
         </div>
       </modal-dialog>
@@ -1167,6 +1180,23 @@
           "id": "page",
           "type": "page",
           "label": "t:sections.main-product.blocks.popup.settings.page.label"
+        },
+        {
+          "id": "hide_empty_popup",
+          "type": "checkbox",
+          "label": "Hide empty popup",
+          "default": false
+        },
+        {
+          "id": "hide_popup_title",
+          "type": "checkbox",
+          "label": "Hide popup page title",
+          "default": false
+        },
+        {
+          "id": "popup_content",
+          "type": "richtext",
+          "label": "Popup Content"
         }
       ]
     },
