@@ -34,14 +34,11 @@
             "swatch_shape": "circle"
           }
         },
-        "popup_YK4mhF": {
+        "popup_thfChM": {
           "type": "popup",
           "settings": {
-            "text": "Size chart",
-            "page": "",
-            "table_page": "",
-            "table_html": "",
-            "table_richtext": "<p>Size chart<\/p><p><strong>Size chart<\/strong><\/p><p>Size chart<\/p><p>Size chart<\/p>"
+            "text": "Pop-up link text",
+            "page": ""
           }
         },
         "quantity_selector": {
@@ -110,7 +107,7 @@
         "caption",
         "price",
         "variant_picker",
-        "popup_YK4mhF",
+        "popup_thfChM",
         "quantity_selector",
         "buy_buttons",
         "description",
@@ -133,9 +130,7 @@
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 12,
-        "table_page": "",
-        "table_html": ""
+        "padding_bottom": 12
       }
     },
     "image-with-text": {
