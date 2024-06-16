@@ -36,16 +36,6 @@
     }
   {%- endstyle -%}
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      console.log('Popup loaded');
-      const popupRichText = document.querySelector('.popup-richtext');
-      if (popupRichText) {
-        console.log('Richtext content:', popupRichText.innerHTML);
-      }
-    });
-  </script>
-
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   {%- if product.quantity_price_breaks_configured? -%}
@@ -696,26 +686,6 @@
           <div class="product-popup-modal__content-info">
             <h1 class="h2">{{ block.settings.page.title | escape }}</h1>
             {{ block.settings.page.content }}
-
-            {% comment %} -----new code------ {% endcomment %}
-            {{ block.settings.table_page.content }}
-
-            {% if block.settings.image_with_table != blank %}
-              {{
-                block.settings.image_with_table
-                | image_url: width: block.settings.image_with_table.width
-                | image_tag
-              }}
-            {% endif %}
-
-            {{ block.settings.table_html }}
-
-            {% if block.settings.table_richtext != blank %}
-              <div class="popup-richtext">
-                {{ block.settings.table_richtext | escape }}
-              </div>
-            {% endif %}
-            {% comment %} --------end new code----- {% endcomment %}
           </div>
         </div>
       </modal-dialog>
@@ -746,21 +716,6 @@
     </script>
   </div>
 </product-info>
-
-{% comment %} ---------new code---------- {% endcomment %}
-{%- if section.settings.table_page != blank -%}
-  {{ section.settings.table_page.title }}
-  {{ section.settings.table_page.content }}
-{%- endif -%}
-
-{%- if section.settings.image_with_table -%}
-  {{ section.settings.image_with_table | image_url: width: section.settings.image_with_table.width | image_tag }}
-{%- endif -%}
-
-{%- if section.settings.table_html -%}
-  {{ section.settings.table_html }}
-{%- endif -%}
-{% comment %} ---------end new code------- {% endcomment %}
 
 {% schema %}
 {
@@ -1212,26 +1167,6 @@
           "id": "page",
           "type": "page",
           "label": "t:sections.main-product.blocks.popup.settings.page.label"
-        },
-        {
-          "type": "page",
-          "id": "table_page",
-          "label": "Page with table"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_with_table",
-          "label": "Image with table"
-        },
-        {
-          "type": "html",
-          "id": "table_html",
-          "label": "Table HTML code"
-        },
-        {
-          "type": "richtext",
-          "id": "table_richtext",
-          "label": "Table Rich Text"
         }
       ]
     },
@@ -2312,21 +2247,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    },
-    {
-      "type": "page",
-      "id": "table_page",
-      "label": "Page with table"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_with_table",
-      "label": "Image with table"
-    },
-    {
-      "type": "html",
-      "id": "table_html",
-      "label": "Table HTML code"
     }
   ]
 }
