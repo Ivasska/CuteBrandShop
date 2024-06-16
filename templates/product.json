@@ -34,13 +34,6 @@
             "swatch_shape": "circle"
           }
         },
-        "popup_thfChM": {
-          "type": "popup",
-          "settings": {
-            "text": "Pop-up link text",
-            "page": ""
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -107,7 +100,6 @@
         "caption",
         "price",
         "variant_picker",
-        "popup_thfChM",
         "quantity_selector",
         "buy_buttons",
         "description",
