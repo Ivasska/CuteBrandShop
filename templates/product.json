@@ -41,7 +41,7 @@
             "page": "",
             "table_page": "",
             "table_html": "",
-            "table_richtext": "<p>Size chart<\/p><p>Size chart<\/p><p>Size chart<\/p><p>Size chart<\/p>"
+            "table_richtext": "<p>Size chart<\/p><p><strong>Size chart<\/strong><\/p><p>Size chart<\/p><p>Size chart<\/p>"
           }
         },
         "quantity_selector": {
