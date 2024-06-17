@@ -59,7 +59,7 @@
       function tabSlider(){
         $('.tabs .product-grid').each(function() {
           var $this = $(this);
-          if ($this.children('li').length > 3) {
+          if ($this.children('li').length > 0) {
             if ($this.hasClass('slick-initialized')) {
               $this.slick('unslick');
             }
@@ -248,7 +248,7 @@
           "type": "checkbox",
           "id": "viewall",
           "label": "Show view all",
-          "default": true
+          "default": false
         }
       ]
     }
