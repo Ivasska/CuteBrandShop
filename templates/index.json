@@ -146,10 +146,26 @@
             "collection": "women-dresses",
             "viewall": false
           }
+        },
+        "tab_p3xNXJ": {
+          "type": "tab",
+          "settings": {
+            "collection": "clothing",
+            "viewall": true
+          }
+        },
+        "tab_hzxbLW": {
+          "type": "tab",
+          "settings": {
+            "collection": "women-jeans",
+            "viewall": true
+          }
         }
       },
       "block_order": [
-        "tab_pV3M9W"
+        "tab_pV3M9W",
+        "tab_p3xNXJ",
+        "tab_hzxbLW"
       ],
       "settings": {
         "title": "Women Fashion",
