@@ -27,7 +27,6 @@
           {% capture content %}
             <div id="tabs-{{ collection.id }}">
               <ul class="grid product-grid grid--2-col-tablet-down  grid--4-col-desktop">
-                <button class="slick-prev slick-arrow arrow-control" aria-label="Previous" type="button" style="">Previous</button>
                {%- for product in block.settings.collection.products limit: 4 -%}
                <li class="grid__item scroll-trigger animate--slide-in">
                   {% render 'card-product',
@@ -42,7 +41,7 @@
                   %}
                </li>
               {%- endfor -%}
-              <button class="slick-next slick-arrow arrow-control" aria-label="Next" type="button" style="">Next</button>
+              
               </ul>
              {%  if block.settings.viewall %}
                <div class="center collection__view-all scroll-trigger animate--slide-in">
@@ -69,7 +68,7 @@
               $this.slick('unslick');
             }
             $this.slick({
-              dots: true,
+
               arrows: true,
               infinite: false,
               speed: 300,
