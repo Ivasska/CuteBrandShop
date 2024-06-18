@@ -7,6 +7,7 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
       <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+      {% comment %} <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"> {% endcomment %}
     {% endif %}
     {% if section.settings.title != blank %}
       <h2 class="h1">{{ section.settings.title }}</h2>
@@ -59,7 +60,7 @@
       function tabSlider(){
         $('.tabs .product-grid').each(function() {
           var $this = $(this);
-          if ($this.children('li').length > 0) {
+          if ($this.children('li').length > 3) {
             if ($this.hasClass('slick-initialized')) {
               $this.slick('unslick');
             }
@@ -70,15 +71,6 @@
               slidesToShow: 4,
               slidesToScroll: 1,
               responsive: [
-                {
-                  breakpoint: 1640,
-                  settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: true,
-                    arrows: true
-                  }
-                },
                 {
                   breakpoint: 1024,
                   settings: {
@@ -247,8 +239,7 @@
         {
           "type": "checkbox",
           "id": "viewall",
-          "label": "Show view all",
-          "default": false
+          "label": "Show view all"
         }
       ]
     }

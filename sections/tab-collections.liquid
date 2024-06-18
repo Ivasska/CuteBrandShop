@@ -1,0 +1,95 @@
+{% comment %} підключаю бутстрап для табів {% endcomment %}
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+  crossorigin="anonymous"
+>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
+{% comment %} підключаю бутстрап для табів {% endcomment %}
+
+<div class="tab-collections page-width">
+  <div class="container">
+    {% if section.blocks.size > 0 %}
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        {% for block in section.blocks %}
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link{% if forloop.first %} active{% endif %}"
+              id="tab-{{ forloop.index }}"
+              data-bs-toggle="tab"
+              data-bs-target="#collection_{{ forloop.index }}"
+              type="button"
+              role="tab"
+              aria-controls="collection_{{ forloop.index }}"
+              aria-selected="true"
+            >
+              {% if block.settings.collection_title != blank %}
+                {{ block.settings.collection_title }}
+              {% else %}
+                {{ block.settings.collection_title | default: 'Collection title' }}
+              {% endif %}
+            </button>
+          </li>
+        {% endfor %}
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        {% for block in section.blocks %}
+          <div
+            class="tab-pane fade {% if forloop.first %} show active {% endif %}"
+            id="collection_{{ forloop.index }}"
+            role="tabpanel"
+            aria-labelledby="collection_{{ forloop.index }}"
+          >
+            {% assign collection = block.settings.collection %}
+            <div class="row">
+              {% for product in collection.products %}
+                <div class="col-4">
+                  <a href="{{ product.url }}">
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title }}">
+                    <h5>{{ product.title }}</h5>
+                    <p>{{ product.price | money }}</p>
+                  </a>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Tab Collections",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "text",
+          "id": "collection_title",
+          "label": "Collection title"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tab Collection Custom"
+    }
+  ]
+}
+{% endschema %}
