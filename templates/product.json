@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -38,7 +47,10 @@
           "type": "popup",
           "settings": {
             "text": "Pop-up link text",
-            "page": ""
+            "page": "",
+            "hide_empty_popup": false,
+            "hide_popup_title": false,
+            "popup_content": "<p>test text<\/p>"
           }
         },
         "quantity_selector": {
