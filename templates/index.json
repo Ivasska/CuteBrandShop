@@ -202,6 +202,11 @@
         "collection_Q7VV4C",
         "collection_if3HYV"
       ],
+      "custom_css": [
+        ".nav {justify-content: center;}",
+        ".nav-tabs {border-bottom: none;}",
+        ".nav-link .active {border-color: none;}"
+      ],
       "settings": {
       }
     },
