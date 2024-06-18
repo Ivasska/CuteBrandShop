@@ -172,44 +172,6 @@
         "useslider": true
       }
     },
-    "tab_collections_mqzMdK": {
-      "type": "tab-collections",
-      "blocks": {
-        "collection_k9mVJq": {
-          "type": "collection",
-          "settings": {
-            "collection_title": "style it with",
-            "collection": "women-dresses"
-          }
-        },
-        "collection_Q7VV4C": {
-          "type": "collection",
-          "settings": {
-            "collection_title": "recommended for you",
-            "collection": "women-jeans"
-          }
-        },
-        "collection_if3HYV": {
-          "type": "collection",
-          "settings": {
-            "collection_title": "recently viewed",
-            "collection": "women-skirt"
-          }
-        }
-      },
-      "block_order": [
-        "collection_k9mVJq",
-        "collection_Q7VV4C",
-        "collection_if3HYV"
-      ],
-      "custom_css": [
-        ".nav {justify-content: center;}",
-        ".nav-tabs {border-bottom: none;}",
-        ".nav-link .active {border-color: none;}"
-      ],
-      "settings": {
-      }
-    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -382,7 +344,6 @@
     "video_ymAUWg",
     "featured_products_slider_fMGxDr",
     "custom_tab_collection_xJH7TW",
-    "tab_collections_mqzMdK",
     "rich_text",
     "featured_collection",
     "collage",
