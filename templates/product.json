@@ -50,7 +50,7 @@
             "page": "",
             "hide_empty_popup": false,
             "hide_popup_title": false,
-            "popup_content": "<p>test text<\/p><p><\/p>"
+            "popup_content": "<p>test text<\/p><p><a href=\"https:\/\/au.ohpolly.com\/\" target=\"_blank\" title=\"https:\/\/au.ohpolly.com\/\">https:\/\/au.ohpolly.com\/<\/a><\/p>"
           }
         },
         "quantity_selector": {
