@@ -116,7 +116,7 @@
           "type": "ScrollingText",
           "settings": {
             "text": "fashion",
-            "image": "shopify:\/\/shop_images\/icons8-smiling-48.png",
+            "image": "shopify:\/\/shop_images\/emoji-smile-svgrepo-com.svg",
             "color": "#4bb8f5"
           }
         },
