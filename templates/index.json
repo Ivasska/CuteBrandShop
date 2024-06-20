@@ -116,6 +116,7 @@
           "type": "ScrollingText",
           "settings": {
             "text": "fashion",
+            "image": "shopify:\/\/shop_images\/happy_8752921.png",
             "color": "#4bb8f5"
           }
         },
