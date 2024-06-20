@@ -1,0 +1,84 @@
+{% style %}
+  .marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 50px;
+    overflow: hidden;
+    padding: 10px 0;
+  }
+  .marquee-content {
+    display: flex;
+    gap: 8rem;
+  }
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 23px;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  .marquee .track:hover {
+    animation-play-state: paused;
+  }
+  .content {
+  }
+{% endstyle %}
+
+<div class="marquee">
+  <div class="track">
+    <div class="marquee-content">
+      {% for i in (1..5) %}
+        {% for block in section.blocks %}
+          <span
+            class="marquee-gap"
+            style="color: {{ block.settings.color }};"
+          >
+            {{ block.settings.text }}
+          </span>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Marquee Full Width",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "ScrollingText",
+      "name": "Scrolling Text",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Title",
+          "label": "Scrolling Text"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "default": "#000000",
+          "label": "Text Color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Marquee Full Width"
+    }
+  ]
+}
+{% endschema %}
