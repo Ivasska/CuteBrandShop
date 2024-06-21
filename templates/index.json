@@ -146,6 +146,41 @@
         ]
       }
     },
+    "custom_tab_collection_xJH7TW": {
+      "type": "custom-tab-collection",
+      "blocks": {
+        "tab_pV3M9W": {
+          "type": "tab",
+          "settings": {
+            "collection": "women-dresses",
+            "viewall": false
+          }
+        },
+        "tab_p3xNXJ": {
+          "type": "tab",
+          "settings": {
+            "collection": "clothing",
+            "viewall": true
+          }
+        },
+        "tab_hzxbLW": {
+          "type": "tab",
+          "settings": {
+            "collection": "women-jeans",
+            "viewall": true
+          }
+        }
+      },
+      "block_order": [
+        "tab_pV3M9W",
+        "tab_p3xNXJ",
+        "tab_hzxbLW"
+      ],
+      "settings": {
+        "title": "Women Fashion",
+        "useslider": true
+      }
+    },
     "tab_collections_DTa3qi": {
       "type": "tab-collections",
       "blocks": {
@@ -352,6 +387,7 @@
     "collection_list_iWMGyE",
     "video_ymAUWg",
     "featured_products_slider_fMGxDr",
+    "custom_tab_collection_xJH7TW",
     "tab_collections_DTa3qi",
     "rich_text",
     "featured_collection",
