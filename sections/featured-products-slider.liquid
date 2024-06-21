@@ -9,11 +9,23 @@
     <div class="products-grid">
       {% for product in section.settings.products limit: 8 %}
         <div class="product-item">
-          <a href="{{ product.url }}">
-            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
-            <p>{{ product.title }}</p>
-            <p>{{ product.price | money }}</p>
-          </a>
+          {% render 'card-product',
+            card_product: product,
+            media_aspect_ratio: section.settings.image_ratio,
+            image_shape: section.settings.image_shape,
+            show_secondary_image: section.settings.show_secondary_image,
+            show_vendor: section.settings.show_vendor,
+            show_rating: section.settings.show_rating,
+            show_quick_add: section.settings.enable_quick_add,
+            section_id: section.id
+          %}
+          {% comment %}
+            <a href="{{ product.url }}">
+              <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+              <p>{{ product.title }}</p>
+              <p>{{ product.price | money }}</p>
+            </a>
+          {% endcomment %}
         </div>
       {% endfor %}
     </div>
