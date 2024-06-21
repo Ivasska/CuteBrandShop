@@ -109,51 +109,6 @@
         "padding_bottom": 32
       }
     },
-    "marquee_section_tJiy6X": {
-      "type": "marquee-section",
-      "blocks": {
-        "scrolling_text_zerywf": {
-          "type": "ScrollingText",
-          "settings": {
-            "text": "fashion",
-            "image": "shopify:\/\/shop_images\/emoji-smile-svgrepo-com.svg",
-            "color": "#4bb8f5"
-          }
-        },
-        "scrolling_text_UYrdND": {
-          "type": "ScrollingText",
-          "settings": {
-            "text": "style",
-            "color": "#194cb4"
-          }
-        },
-        "scrolling_text_RNjhxB": {
-          "type": "ScrollingText",
-          "settings": {
-            "text": "cute",
-            "color": "#5483f9"
-          }
-        },
-        "scrolling_text_r8XMeH": {
-          "type": "ScrollingText",
-          "settings": {
-            "text": "kawaii",
-            "color": "#114db6"
-          }
-        }
-      },
-      "block_order": [
-        "scrolling_text_zerywf",
-        "scrolling_text_UYrdND",
-        "scrolling_text_RNjhxB",
-        "scrolling_text_r8XMeH"
-      ],
-      "custom_css": [
-        ".marquee {border: 1px solid blue;}"
-      ],
-      "settings": {
-      }
-    },
     "video_ymAUWg": {
       "type": "video",
       "settings": {
@@ -347,13 +302,26 @@
         "product",
         "collection-1"
       ],
-      "disabled": true,
       "settings": {
         "heading": "Multimedia collage",
         "heading_size": "h2",
         "desktop_layout": "left",
         "mobile_layout": "collage",
         "card_styles": "product-card-wrapper",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
         "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
@@ -417,7 +385,6 @@
   "order": [
     "image_banner",
     "collection_list_iWMGyE",
-    "marquee_section_tJiy6X",
     "video_ymAUWg",
     "featured_products_slider_fMGxDr",
     "custom_tab_collection_xJH7TW",
@@ -425,6 +392,7 @@
     "rich_text",
     "featured_collection",
     "collage",
+    "video",
     "multicolumn"
   ]
 }
