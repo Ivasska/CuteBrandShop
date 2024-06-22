@@ -82,6 +82,22 @@
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
+  .nav-tabs {
+    font-size: 14px;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .nav-tabs .nav-link:focus,
+  .nav-tabs .nav-link:hover,
+  .nav-tabs .nav-link.active {
+    border-color: none;
+  }
+  .nav-tabs,
+  .nav-link {
+    border: none !important;
+  }
 </style>
 
 {% comment %} -----slick slider------- {% endcomment %}
