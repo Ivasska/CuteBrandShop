@@ -158,16 +158,18 @@
         },
         "tab_p3xNXJ": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "collection": "clothing",
-            "viewall": true
+            "viewall": false
           }
         },
         "tab_hzxbLW": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "collection": "women-jeans",
-            "viewall": true
+            "viewall": false
           }
         }
       },
