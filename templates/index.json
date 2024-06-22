@@ -160,14 +160,14 @@
           "type": "tab",
           "settings": {
             "collection": "clothing",
-            "viewall": false
+            "viewall": true
           }
         },
         "tab_hzxbLW": {
           "type": "tab",
           "settings": {
             "collection": "women-jeans",
-            "viewall": false
+            "viewall": true
           }
         }
       },
@@ -302,7 +302,6 @@
         "product",
         "collection-1"
       ],
-      "disabled": true,
       "settings": {
         "heading": "Multimedia collage",
         "heading_size": "h2",
@@ -316,7 +315,6 @@
     },
     "video": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
