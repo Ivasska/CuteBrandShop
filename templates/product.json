@@ -49,7 +49,7 @@
             "text": "Pop-up link text",
             "page": "size-page",
             "hide_empty_popup": false,
-            "hide_popup_title": false,
+            "hide_popup_title": true,
             "popup_content": ""
           }
         },
