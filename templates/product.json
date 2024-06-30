@@ -47,7 +47,10 @@
           "type": "popup",
           "settings": {
             "text": "Pop-up link text",
-            "page": ""
+            "page": "size-page",
+            "hide_empty_popup": false,
+            "hide_popup_title": false,
+            "popup_content": ""
           }
         },
         "quantity_selector": {
