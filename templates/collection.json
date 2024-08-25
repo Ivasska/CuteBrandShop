@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "banner": {
@@ -34,20 +43,27 @@
           "settings": {
             "collection": "women-bags"
           }
+        },
+        "featured_collection_fjgH4M": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "clothing"
+          }
         }
       },
       "block_order": [
         "featured_collection_kCVKBV",
         "featured_collection_zPHEyF",
         "featured_collection_TTUgeC",
-        "featured_collection_NmyenM"
+        "featured_collection_NmyenM",
+        "featured_collection_fjgH4M"
       ],
       "settings": {
         "image_ratio": "portrait",
         "columns_desktop": 4,
         "color_scheme": "",
         "show_view_all": false,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
