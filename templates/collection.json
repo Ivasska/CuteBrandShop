@@ -38,16 +38,10 @@
             "collection": "women-skirt"
           }
         },
-        "featured_collection_NmyenM": {
+        "featured_collection_bahnyd": {
           "type": "featured_collection",
           "settings": {
-            "collection": "women-bags"
-          }
-        },
-        "featured_collection_fjgH4M": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "clothing"
+            "collection": "women-dresses"
           }
         }
       },
@@ -55,8 +49,7 @@
         "featured_collection_kCVKBV",
         "featured_collection_zPHEyF",
         "featured_collection_TTUgeC",
-        "featured_collection_NmyenM",
-        "featured_collection_fjgH4M"
+        "featured_collection_bahnyd"
       ],
       "settings": {
         "image_ratio": "portrait",
